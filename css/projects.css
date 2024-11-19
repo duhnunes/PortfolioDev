@@ -1,0 +1,94 @@
+#projects {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:3.5rem;
+
+  padding:4.5rem 7.5rem 9rem;
+
+  & .about {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0.5rem;
+  
+    & h2 {
+      font:var(--subtitle);
+      color:var(--red);
+    }
+  
+    & p{
+      font:var(--title-md);
+    }
+  }
+}
+
+@media (max-width:425px) {
+  #projects {
+    padding-inline:2.5rem;
+  }
+}
+
+.grid-projects {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(0, 20.625rem));
+  justify-content:center;
+  gap:1.5rem;
+
+  width:100%;
+  max-width:65rem;
+}
+
+.card {
+  display:flex;
+  flex-direction:column;
+  gap:1.25rem;
+
+  max-width:20.625rem;
+
+  background-color:var(--gray-300);
+  padding:0.75rem;
+
+  outline:1px solid transparent;
+  border-radius:12px;
+
+  animation: cardUpPage linear;
+  animation-timeline:view();
+  animation-range-start: cover;
+  animation-range-end:400px;
+
+  transition:outline-color .2s ease-in;
+
+  & img {
+    width:100%;
+    border-radius:8px;
+  }
+
+  & .project-desc{
+    
+    & h3 {
+      font:var(--title-sm);
+      margin-bottom:0.5rem;
+    }
+
+    & p {
+      font:var(--text-sm);
+      color:var(--gray-500);
+    }
+  }
+
+  &:hover {
+    outline-color:var(--gray-400);
+  }
+}
+
+@keyframes cardUpPage {
+  from {
+    opacity:0;
+    transform:translateY(300px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}

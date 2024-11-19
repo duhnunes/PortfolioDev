@@ -1,0 +1,96 @@
+.github {
+  background: url(../assets/icons/GitHub.svg) no-repeat center/cover;
+
+  width:1.5rem;
+  height:1.5rem;
+}
+.html {
+  background: url(../assets/icons/html.svg) no-repeat center/cover;
+
+  width:1.5rem;
+  height:1.5rem;
+}
+.css {
+  background: url(../assets/icons/css.svg) no-repeat center/cover;
+
+  width:1.5rem;
+  height:1.5rem;
+}
+.javascript {
+  background: url(../assets/icons/javascript.svg) no-repeat center/cover;
+
+  width:1.5rem;
+  height:1.5rem;
+}
+.react {
+  background: url(../assets/icons/react.svg) no-repeat center/cover;
+
+  width:1.5rem;
+  height:1.5rem;
+}
+.nodejs {
+  background: url(../assets/icons/node.js.svg) no-repeat center/cover;
+  
+  width:1.5rem;
+  height:1.5rem;
+}
+.CaretDoubleDown {
+  background: url(../assets/icons/CaretDoubleDown.svg) no-repeat center/cover;
+
+  width:2rem;
+  height:2rem;
+}
+.device {
+  background: url(../assets/icons/device.svg) no-repeat center/cover;
+
+  width:3rem;
+  height:3rem;
+}
+.server {
+  background: url(../assets/icons/server.svg) no-repeat center/cover;
+
+  width:3rem;
+  height:3rem;
+}
+.devops {
+  background: url(../assets/icons/devops.svg) no-repeat center/cover;
+
+  width:3rem;
+  height:3rem;
+}
+.ArrowUpRight {
+  background: url(../assets/icons/ArrowUpRight.svg) no-repeat center/cover;
+
+  width:1.25rem;
+  height:1.25rem;
+}
+.ArrowUp {
+  background: url(../assets/icons/ArrowUpRight.svg) no-repeat center/cover;
+
+  width:1.25rem;
+  height:1.25rem;
+}
+.linkedin {
+  background: url(../assets/icons/linkedin.svg) no-repeat center/cover;
+
+  width:1.75rem;
+  height:1.75rem;
+}
+.instagram {
+  background: url(../assets/icons/Instagram.svg) no-repeat center/cover;
+
+  width:1.75rem;
+  height:1.75rem;
+}
+.github-unfill {
+  background: url(../assets/icons/GithubUnfill.svg) no-repeat center/cover;
+
+  width:1.75rem;
+  height:1.75rem;
+}
+.email {
+  background: url(../assets/icons/Email.svg) no-repeat center/cover;
+
+  width:1.75rem;
+  height:1.75rem;
+}

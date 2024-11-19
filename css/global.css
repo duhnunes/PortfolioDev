@@ -1,0 +1,113 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+:root {
+  /* FONTS */
+  --asap: "Asap", sans-serif;
+  --inconsolata: "Inconsolata", monospace;
+  --maven: "Maven Pro", sans-serif;
+
+  --title-sm: 700 1rem/120% var(--asap);
+  --title-md: 700 1.5rem/120% var(--asap);
+  --title-lg: 700 2.5rem/120% var(--asap);
+  --title-xl: 700 3.5rem/120% var(--asap);
+
+  --subtitle-sm: 400 1.025rem/120% var(--inconsolata);
+  --subtitle: 400 1.25rem/120% var(--inconsolata);
+
+  --text-sm: 400 0.875rem/140% var(--maven);
+  --text-md: 400 1rem/140% var(--maven);
+  
+  /* BASE */
+  --gray-100: #0D0E11;
+  --gray-200: #16181D;
+  --gray-300: #292C34;
+  --gray-400: #878EA1;
+  --gray-500: #C0C4CE;
+  --gray-600: #E2E4E9;
+
+  /* PRIMARY */
+  --red: #E3646E;
+  --purple: #BB72E9;
+  --blue: #3996DB;
+  --green: #82BC4F;
+  --yellow: #EABD5F;
+
+  scrollbar-width:thin;
+  scrollbar-color:var(--gray-300) var(--gray-200);
+}
+
+body {
+  background-color:var(--gray-200);
+  color:var(--gray-600);
+  font:var(--text-md);
+}
+
+button {
+  all:unset;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:pointer;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+/* UTILITIES */
+.red {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(26%) saturate(5293%) hue-rotate(315deg) brightness(91%) contrast(95%);
+}
+
+.blue {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(38%) saturate(6577%) hue-rotate(180deg) brightness(89%) contrast(91%);
+}
+
+.green {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(23%) saturate(918%) hue-rotate(49deg) brightness(93%) contrast(92%);
+}
+
+.yellow {
+  filter: brightness(0) saturate(100%) invert(94%) sepia(87%) saturate(4972%) hue-rotate(307deg) brightness(89%) contrast(106%);
+}
+
+.ArrowUpPage {
+  position:fixed;
+  bottom:1rem;
+  right:0.5rem;
+  
+  padding:0.5rem;
+
+  background-color:var(--gray-300);
+  border-radius:8px;
+
+  box-shadow:0 4px 5px rgba(0 0 0 / .5);
+
+  animation: btnUpPage linear;
+  animation-timeline:view();
+
+  z-index:10;
+
+  i {
+    rotate:-45deg;
+  }
+}
+
+@keyframes btnUpPage {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
